@@ -112,7 +112,7 @@ public class ScriptHelper {
                         neteaseContext.sendBroadcast(intent);
                 } else if (line.contains("HTTP Server running")) {
                     if (neteaseContext != null && ExtraHelper.getExtraDate(ExtraHelper.SCRIPT_STATUS).equals("0"))
-                        Tools.showToastOnLooper(neteaseContext, "UnblockNeteaseMusic运行成功");
+                        // Tools.showToastOnLooper(neteaseContext, "UnblockNeteaseMusic运行成功");
                     ExtraHelper.setExtraDate(ExtraHelper.SCRIPT_STATUS, "1");
                 } else if (line.equals("Killed ")) {
                     if (SettingHelper.getInstance().getSetting(SettingHelper.proxy_master_key))
